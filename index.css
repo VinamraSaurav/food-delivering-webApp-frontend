@@ -389,6 +389,8 @@ body{
 @media all and (max-width:400px){
     .nav-items>ul{
         flex-wrap:wrap;
+        margin-left: auto;
+        margin-right: auto;
     }
     .nav{
         flex-wrap:wrap;
@@ -408,5 +410,16 @@ body{
     }
     #text>h3{
         font-size: 20px;
+    }
+    .logo{
+        height: 50px;
+        width: 55px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-items>ul>li{
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
