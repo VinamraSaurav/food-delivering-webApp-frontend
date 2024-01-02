@@ -42,7 +42,6 @@ const Header=()=>(
 );
 const Hero=()=>(
     <div className='hero'>
-        <div className="hero-bakcground"></div>
         <div className="hero-text">
             <div id="text">
                 <h1>Welcome to <span className="company-name">FOODIGY</span></h1>
@@ -82,6 +81,9 @@ const Body=()=>(
             <Card/>
             <Card/>
             <Card/>
+            <Card/>
+            <Card/>
+            
         </div>
     </div>
 );
