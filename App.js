@@ -34,7 +34,7 @@ const Header=()=>(
                     <li>Home</li>
                     <li>Menu</li>
                     <li>Resturants</li>
-                    <li>🛒</li>
+                    <li className="cart"><img className="cart-logo" width="25" height="25" src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png" alt="shopping-cart"/></li>
                 </ul>
             </div>
         </nav>
@@ -89,7 +89,7 @@ const Footer=()=>(
     <div className='footer'>
             <h1 className="foot-name"><span className="company-name-foot">FOODIGY</span></h1>
             <div className="foot-menu">
-                <img src="https://media.giphy.com/media/b1jT7PYHb6haRPjafP/giphy.gif" alt="Address"/>
+                <img className="address-logo" src="https://media.giphy.com/media/b1jT7PYHb6haRPjafP/giphy.gif" alt="Address"/>
                 <div className="address">
                     <ul><h3>Address</h3>
                     <li>Patia, Bhubaneswar</li>
