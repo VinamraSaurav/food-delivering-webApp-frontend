@@ -21,7 +21,7 @@ body {
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 0px; */
+  background-position: 0px;
   /* box-shadow: 0 10px 5px #f9f9c6; */
   /* border-radius: 40px; */
   border-bottom-left-radius: 40px;
@@ -31,7 +31,8 @@ body {
 .hero-text {
   /* padding:30px; */
   background-color: rgba(0, 0, 0, 0.42);
-  border-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .nav {
@@ -179,12 +180,14 @@ body {
 .card {
   height: auto;
   width: 320px;
-  padding: 0 0 3px 0;
+  padding: 8px;
   margin: 10px 20px;
-  text-align: center;
-  border: 4px solid #f7d24e;
+  /* text-align: center; */
+  /* border: 4px solid #f7d24e; */
   border-radius: 30px;
-  /* word-wrap:break-word; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 0 5px gray;
 }
 
 .card > img {
@@ -195,23 +198,40 @@ body {
   /* border-radius: 30px; */
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
+  margin-bottom: 8px;
+  
+}
+.res-name-rate{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+.resturant-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.res-locality{
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+.resturant-cuisines{
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:250px;
+    margin-left:8px ;
+    font-size: 14px;
 }
 
-.restruant-description {
+.resturant-description {
   display: flex;
-  justify-content: space-evenly;
-  font-size: 20px;
-  margin-top: 20px;
+  justify-content: space-between;
+  font-size: 14px;
   font-weight: 200;
-  margin-bottom: 20px;
-}
-.cf {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-weight: bold;
+  margin:20px 8px;
 }
 
 .card > h1 {
@@ -219,18 +239,22 @@ body {
 }
 .rating {
   background-color: rgb(43, 218, 43);
-  padding: 3px 12px 3px 8px;
+  padding: 1px 8px 5px 4px;
   border-radius: 10px;
-  box-shadow: 0 0 5px greenyellow;
+  /* box-shadow: 0 0 5px greenyellow; */
   color: white;
+  height: 20px;
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .card:hover {
   /* height: 520px;
     width:420px; */
   /* padding:10px 10px 0 10px;  */
   /* margin:10px auto 20px auto; */
-  text-align: center;
-  background-color: #ffff88;
+  /* text-align: center; */
+  background-color: #f3f4d0;
   color: black;
   border-radius: 30px;
   cursor: pointer;

@@ -9,37 +9,36 @@ const Card = (props) => {
   return (
     <div className="card">
       <img alt="resturant-img" className="hotel-img" src={url} />
-      <h2 className="resturant-name">{name}</h2>
-      <p className="res-locality">{locality.name}</p>
-      <h3 className="resturant-cusines">
-        {cuisine.map((x) => x.name).join(", ")}
-      </h3>
-      <div className="cf">
-        <span className="cft">{cft.text}</span>
-        <span className="cfo">{cfo.text}</span>
+      <div className="res-name-rate">
+        <span className="resturant-name">{name}</span>
+        <span className="rating">⭐{aggregate_rating}</span>
       </div>
-      <div className="restruant-description">
-        <span>ETA : {deliveryTime}</span>
-        <span className="rating">⭐ : {aggregate_rating}</span>
+      <span className="res-locality">{locality.name}</span>
+      <p className="resturant-cuisines">
+        {cuisine.map((x) => x.name).join(", ")}
+      </p>
+      <div className="resturant-description">
+      <span className="cfo">{cfo.text}</span>
+        <span>{deliveryTime}</span>
       </div>
     </div>
   );
 };
 
 /**
- * Key are used when ever we use map function as 
+ * Key are used when ever we use map function as
  * if new element is added in between React does not have to
  * re-render the elements again, as it can identify elements uniquely
- * 
+ *
  * use id as key
- * 
+ *
  * Incase, no id provided by data, use index(array index) as id
- * 
+ *
  * syntax to use index as id
  *
  * map(element, element's index in arrray)
  * key = map function ka second element
- * 
+ *
  * Using an ID as key(Best Practice) >>> Using Index as key (worst case if no key present) >>> no key(raises a warning, should be avoided).
  */
 function Body() {
