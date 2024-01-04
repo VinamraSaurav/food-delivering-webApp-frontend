@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./Header";
-import Hero from "./Hero";
-import Body from "./Body";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
 /**
  * Header
  *  -logo

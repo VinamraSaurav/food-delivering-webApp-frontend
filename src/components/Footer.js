@@ -1,3 +1,5 @@
+import { ADDRESS_GIF, INSTA_LOGO_URL, X_LOGO_URL, YT_LOGO_URL } from "../utils/constants";
+
 function Footer() {
   return (
     <div className="footer">
@@ -7,7 +9,7 @@ function Footer() {
       <div className="foot-menu">
         <img
           className="address-logo"
-          src="https://media.giphy.com/media/b1jT7PYHb6haRPjafP/giphy.gif"
+          src={ADDRESS_GIF}
           alt="Address"
         />
         <div className="address">
@@ -32,13 +34,13 @@ function Footer() {
         <h3>We are Social... Connect with us :D !! </h3>
         <ul>
           <li className="youtube">
-            <img src="https://clipart-library.com/images/dc4LABqni.png" />
+            <img src={YT_LOGO_URL} />
           </li>
           <li className="insta">
-            <img src="https://static-00.iconduck.com/assets.00/instagram-icon-256x256-tc8iic57.png" />
+            <img src={INSTA_LOGO_URL} />
           </li>
           <li className="x">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" />
+            <img src={X_LOGO_URL} />
           </li>
           {/* <li className="linkedin"><img src="https://p7.hiclipart.com/preview/496/112/893/linkedin-ico-icon-linkedin-png-hd.jpg"/></li> */}
         </ul>
