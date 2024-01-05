@@ -1,4 +1,4 @@
-const resdata=[
+const resmockdata=[
     {
         "info": {
             "id": "305807",
@@ -148,7 +148,7 @@ const resdata=[
     {
         "info": {
             "id": "187738",
-            "name": "hotel Toshali",
+            "name": "Hotel Toshali",
             "cloudinaryImageId": "qhep96bo9cw7zskizcr0",
             "locality": "It Park Road",
             "areaName": "Patia",
@@ -1311,4 +1311,4 @@ const resdata=[
         }
     }
 ]
-export default resdata;
+export default resmockdata;

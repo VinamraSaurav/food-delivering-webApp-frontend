@@ -1,6 +1,6 @@
 import Card from "./Card";
 import { useState, useEffect } from "react";
-import resdata from "../utils/ResData";
+import resmockdata from "../utils/ResMockData";
 /**
  * Key are used when ever we use map function as
  * if new element is added in between React does not have to
@@ -18,7 +18,7 @@ import resdata from "../utils/ResData";
  * Using an ID as key(Best Practice) >>> Using Index as key (worst case if no key present) >>> no key(raises a warning, should be avoided).
  */
 function Body() {
-  const [ListOfRestraunt , setListOfRestraunt] = useState([resdata]);
+  const [ListOfRestraunt , setListOfRestraunt] = useState(resmockdata);
 
   useEffect(() => {
     fetchData();
