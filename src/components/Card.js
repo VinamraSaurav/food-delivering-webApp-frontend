@@ -1,23 +1,22 @@
+import { CDN_URL } from "../utils/constants";
+
 const Card = (props) => {
   const { resData } = props;
-  const { name, image, rating, locality, cuisine, cft, cfo } = resData?.info;
-  const { deliveryTime } = resData?.order;
-  const { url } = resData?.info?.image;
-  const { aggregate_rating } = resData?.info?.rating;
+  const { name, cloudinaryImageId, avgRating, locality,areaName, cuisines, costForTwo,sla } = resData?.info;
   return (
     <div className="card">
-      <img alt="resturant-img" className="hotel-img" src={url} />
+      <img alt="resturant-img" className="hotel-img" src={CDN_URL+cloudinaryImageId} />
       <div className="res-name-rate">
         <span className="resturant-name">{name}</span>
-        <span className="rating">⭐{aggregate_rating}</span>
+        <span className="rating">⭐{avgRating}</span>
       </div>
-      <span className="res-locality">{locality.name}</span>
+      <span className="res-locality">{locality}, {areaName}</span>
       <p className="resturant-cuisines">
-        {cuisine.map((x) => x.name).join(", ")}
+        {cuisines.join(", ")}
       </p>
       <div className="resturant-description">
-      <span className="cfo">{cfo.text}</span>
-        <span>{deliveryTime}</span>
+      <span className="cfo">{costForTwo}</span>
+        <span>{sla.slaString}</span>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ function Header() {
             <ul>
               <li>Home</li>
               <li>Menu</li>
-              <li>Resturants</li>
+              <li>Restaurants</li>
             </ul>
             <img
               className="cart-logo"

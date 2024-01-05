@@ -10,3 +10,4 @@ export const ADDRESS_GIF="https://media.giphy.com/media/b1jT7PYHb6haRPjafP/giphy
 export const INSTA_LOGO_URL="https://static-00.iconduck.com/assets.00/instagram-icon-256x256-tc8iic57.png";
 export const X_LOGO_URL="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png";
 export const YT_LOGO_URL="https://clipart-library.com/images/dc4LABqni.png";
+export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/";
