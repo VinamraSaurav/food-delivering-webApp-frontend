@@ -1,4 +1,4 @@
-import { ADDRESS_GIF, INSTA_LOGO_URL, X_LOGO_URL, YT_LOGO_URL } from "../utils/constants";
+import { ADDRESS_GIF, GITHUB_LOGO_URL, INSTA_LOGO_URL, LINKED_IN_LOGO_URL, X_LOGO_URL, YT_LOGO_URL } from "../utils/constants";
 
 function Footer() {
   return (
@@ -33,8 +33,11 @@ function Footer() {
       <div className="social">
         <h3>We are Social... Connect with us :D !! </h3>
         <ul>
-          <li className="youtube">
-            <img src={YT_LOGO_URL} />
+          <li className="github">
+            <img src={GITHUB_LOGO_URL} />
+          </li>
+          <li className="linked-in">
+            <img src={LINKED_IN_LOGO_URL} />
           </li>
           <li className="insta">
             <img src={INSTA_LOGO_URL} />
