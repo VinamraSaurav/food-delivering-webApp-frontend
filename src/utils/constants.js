@@ -12,8 +12,10 @@ export const X_LOGO_URL="https://upload.wikimedia.org/wikipedia/commons/5/57/X_l
 export const LINKED_IN_LOGO_URL="https://freelogopng.com/images/all_img/1656997498linkedin-icon-white.png";
 export const GITHUB_LOGO_URL="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png"
 export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/";
-export const SWIGGY_MENU_API_URL="https://corsproxy.io/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.3532772&lng=85.8265977&restaurantId=";
+export const SWIGGY_MENU_API_URL="https://corsproxy.io/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Fmenu%2Fpl%3Fpage-type%3DREGULAR_MENU%26complete-menu%3Dtrue%26lat%3D20.3532772%26lng%3D85.8265977%26restaurantId%3D";
 export const SWIGGY_API_URL="https://corsproxy.io/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Frestaurants%2Flist%2Fv5%3Flat%3D20.3532772%26lng%3D85.8265977%26page_type%3DDESKTOP_WEB_LISTING";
 export const CART_CONSTRUCTION="https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg";
 export const CONTACT_IMG="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-5795988-4849052.png?f=webp";
 export const ERR_IMG="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvljEEsXxFpX0GprkapxLA0RhYmTr--pX_RQ&usqp=CAU"
+
+//Swiggy meu api url (original):https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.3532772&lng=85.8265977&restaurantId=681612"
