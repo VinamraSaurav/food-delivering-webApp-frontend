@@ -10,6 +10,7 @@ const ItemCard = (props) => {
         <div className="item-name">{name}</div>
         <div className="des">{description}</div>
         <div className="price">₹ {price / 100 || defaultPrice / 100}</div>
+        <div><span className="add-item">ADD +</span></div>
       </div>
       <div className="img-rate">
         <img className="item-img" alt={name+" Img"} src={CDN_URL + imageId} />

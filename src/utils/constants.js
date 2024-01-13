@@ -14,8 +14,9 @@ export const GITHUB_LOGO_URL="https://static-00.iconduck.com/assets.00/github-ic
 export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/";
 export const SWIGGY_MENU_API_URL="https://corsproxy.io/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Fmenu%2Fpl%3Fpage-type%3DREGULAR_MENU%26complete-menu%3Dtrue%26lat%3D20.3532772%26lng%3D85.8265977%26restaurantId%3D";
 export const SWIGGY_API_URL="https://corsproxy.io/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Frestaurants%2Flist%2Fv5%3Flat%3D20.3532772%26lng%3D85.8265977%26page_type%3DDESKTOP_WEB_LISTING";
-export const CART_CONSTRUCTION="https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg";
+export const CART_CONSTRUCTION="https://static.vecteezy.com/system/resources/previews/026/297/051/non_2x/building-webpage-tiny-people-design-website-interface-web-design-concept-software-development-process-programming-and-coding-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg";
 export const CONTACT_IMG="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-5795988-4849052.png?f=webp";
 export const ERR_IMG="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvljEEsXxFpX0GprkapxLA0RhYmTr--pX_RQ&usqp=CAU"
 
 //Swiggy meu api url (original):https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.3532772&lng=85.8265977&restaurantId=681612"
+// cart construction img: https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg
