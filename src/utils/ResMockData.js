@@ -2004,6 +2004,6 @@ const resmockdata=[
         "text": "RESTAURANT_MENU",
         "type": "DEEPLINK"
       }
-    }
-  ]
+    },
+  ];
 export default resmockdata;

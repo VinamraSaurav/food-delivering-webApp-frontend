@@ -1,9 +1,9 @@
 import Card from "./Card";
 import { useState, useEffect } from "react";
-import resmockdata from "../utils/ResMockData";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API_URL } from "../utils/constants";
+import resmockdata from "../utils/ResMockData"
 /**
  * Key are used when ever we use map function as
  * if new element is added in between React does not have to
@@ -33,7 +33,7 @@ function Body() {
   }, []);
 
   const fetchData = async () => {
-    try{const data = await fetch(SWIGGY_API_URL);
+    const data = await fetch(SWIGGY_API_URL);
     const json = await data.json();
     // console.log(
     //   json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -43,11 +43,14 @@ function Body() {
     );
     setFilterRestaurant(
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );}catch(error){
-      setListOfRestaurant(resmockdata);
-      console.log(error);
-    }
-  };
+    );
+}
+if(ListOfRestaurant===undefined){
+  setListOfRestaurant(resmockdata);
+  setFilterRestaurant(resmockdata);
+}
+
+console.log(ListOfRestaurant);
 
   return (
     <div className="body">
@@ -114,7 +117,7 @@ function Body() {
       </div>
       <div className="card-hold">
         {FilterRestaurant=== undefined||FilterRestaurant.length === 0 ? (
-          ListOfRestaurant.length === 0 && searchRestaurant.length === 0 ? (
+          ListOfRestaurant === undefined && searchRestaurant.length === 0 ? (
             <Shimmer />
           ) : (
             <h1 className="error-msg">
