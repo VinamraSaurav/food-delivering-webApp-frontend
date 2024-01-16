@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API_URL } from "../utils/constants";
 import resmockdata from "../utils/ResMockData"
+import useOnlineStatus from "../utils/useOnlineStatus";
 /**
  * Key are used when ever we use map function as
  * if new element is added in between React does not have to
@@ -22,6 +23,7 @@ import resmockdata from "../utils/ResMockData"
  */
 
 function Body() {
+
   const [ListOfRestaurant, setListOfRestaurant] = useState(resmockdata);
   const [FilterRestaurant, setFilterRestaurant] = useState(ListOfRestaurant);
   const [searchRestaurant, setSearchRestaurant] = useState("");
@@ -49,8 +51,11 @@ if(ListOfRestaurant===undefined){
   setListOfRestaurant(resmockdata);
   setFilterRestaurant(resmockdata);
 }
-
-console.log(ListOfRestaurant);
+const online=useOnlineStatus();
+if(online===false){
+  return(<h1><center>Look's like you are not connected to the internet, Kindly check your internet connection.</center></h1>)
+}
+// console.log(ListOfRestaurant);
 
   return (
     <div className="body">

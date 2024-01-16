@@ -2,7 +2,7 @@ import ItemCard from "./ItemCard";
 const MenuSectionCard=(props)=>{
     const{resSec}=props;
     const {title, itemCards}=resSec?.card?.card;
-    console.log(itemCards);
+    // console.log(itemCards);
     return(
         <div className="menu-sec">
             <h1>{title}</h1>

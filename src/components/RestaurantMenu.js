@@ -19,13 +19,13 @@ const RestaurantMenu = () => {
     const json_menu = await menu.json();
     // console.log(json_menu);
     setResInfo(json_menu?.data?.cards[0]?.card?.card?.info);
-    console.log(json_menu?.data?.cards[0]?.card?.card?.info);
+    // console.log(json_menu?.data?.cards[0]?.card?.card?.info);
     setResMenuDetails(
       json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     );
-    console.log(
-      json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
-    );
+    // console.log(
+    //   json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+    // );
   };
 
   const {
