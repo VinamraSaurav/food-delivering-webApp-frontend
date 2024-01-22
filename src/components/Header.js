@@ -32,12 +32,12 @@ function Header() {
               src={CART_URL}
               alt="shopping-cart"
             /></Link> */}
-            <div className="login">
+            {/* <div className="login">
               <Link to="/login">
           <button
           className="login-btn">{logValue}</button></Link>
-          {/* <button>Sign Up</button> */}
-        </div>
+          <button>Sign Up</button>
+        </div> */}
 
         </div>
       </nav>
