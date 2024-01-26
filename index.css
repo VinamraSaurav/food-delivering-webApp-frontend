@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body{
+    max-width: 1960px;
+    margin:0 auto;
+    /* background-color: #fff8e0; */
+}

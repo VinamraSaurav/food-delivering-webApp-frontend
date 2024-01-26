@@ -40,27 +40,27 @@ const RestaurantMenu = () => {
   } = resInfo;
 
   return (
-    <div className="res-Menu">
-      <div className="res-details">
-      <div className="res-info-details">
+    <div className="res-Menu m-2 mx-5 p-2 ">
+      <div className="res-details flex justify-around my-3 border-b-2 max-w-[370px] mx-auto sm:max-w-[700px] md:max-w-[1560px] ">
+      <div className="res-info-details mx-4 mb-2">
           <div className="res-cft-time">
-            <img className="res-pic" src={CDN_URL + cloudinaryImageId}></img>
-            <div className="res-rating">⭐{avgRating}</div>
+            <img className="res-pic " src={CDN_URL + cloudinaryImageId}></img>
+            <div className="res-rating text-center font-bold font-sans p-1">⭐{avgRating}</div>
           </div>
         </div>
-        <div className="res-pic-name-rate">
+        <div className="res-pic-name-rate max-w-[270px] md:max-w-[500px]">
           <div className="res-menu-name-rate">
-            <div className="res-name">{name}</div>
-            <div className="res-loc">
+            <div className="res-name font-serif font-bold text-lg">{name}</div>
+            <div className="res-loc text-sm text-gray-500">
               {locality}, {areaName}
             </div>
-            <div className="res-cuisines">{cuisines?.join(", ")}</div>
-            <div className="res-cft">{costForTwoMessage}</div>
-            <div className="res-time">{sla?.deliveryTime} mins</div>
+            <div className="res-cuisines text-sm">{cuisines?.join(", ")}</div>
+            <div className="res-cft text-sm">{costForTwoMessage}</div>
+            <div className="res-time text-sm mb-4">{sla?.deliveryTime} mins</div>
           </div>
         </div>
       </div>
-      <hr />
+      
 
       <div className="section-card">
         {(resMenuDetails===undefined ||resMenuDetails.length===0)?<Shimmer/>:(resMenuDetails.slice(1).map((e, i) => (

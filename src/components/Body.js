@@ -27,7 +27,7 @@ function Body() {
   const [ListOfRestaurant, setListOfRestaurant] = useState(resmockdata);
   const [FilterRestaurant, setFilterRestaurant] = useState(ListOfRestaurant);
   const [searchRestaurant, setSearchRestaurant] = useState("");
-  const [btnFilter, setBtnFilter] = useState("Top Rated Restaurant");
+  const [btnFilter, setBtnFilter] = useState("Top Restaurants");
   const [btnSearch, setBtnSearch] = useState("Search");
 
   useEffect(() => {
@@ -58,11 +58,12 @@ if(online===false){
 // console.log(ListOfRestaurant);
 
   return (
-    <div className="body">
-      <h1 className="title">Explore Our Restaurants...</h1>
-      <div className="search">
+    <div >
+      <h1 className="text-3xl font-semibold font-serif text-center my-3 py-3 ">Explore Our Restaurants...</h1>
+      <div className="flex justify-center flex-wrap sm:flex-nowrap">
         <input
           type="text"
+          className="w-96 h-9 px-3 shadow-inner shadow-slate-300 rounded-2xl border m-2"
           placeholder="Search for your favourite Delicacies, Resturants and more..."
           id="search-bar"
           value={searchRestaurant}
@@ -84,6 +85,7 @@ if(online===false){
           }}
         ></input>
         <button
+          className="bg-yellow-400 px-4 mx-3 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2"
           onClick={() => {
             const serachResult = ListOfRestaurant.filter((res) =>
               res.info.name
@@ -103,29 +105,29 @@ if(online===false){
           {btnSearch}
         </button>
         <button
-          className="top-restaurnt"
+          className="bg-yellow-400 px-4 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2 "
           onClick={() => {
             const topres = ListOfRestaurant.filter(
               (res) => res.info.avgRating >= 4.5
             );
-            if (btnFilter != "Top Rated Restaurant") {
+            if (btnFilter != "Top Restaurants") {
               setFilterRestaurant(ListOfRestaurant);
-              setBtnFilter("Top Rated Restaurant");
+              setBtnFilter("Top Restaurants");
             } else {
               setFilterRestaurant(topres);
-              setBtnFilter("Show All Restaurant");
+              setBtnFilter("Show All Restaurants");
             }
           }}
         >
           {btnFilter}
         </button>
       </div>
-      <div className="card-hold">
+      <div className="m-4 flex flex-wrap justify-evenly">
         {FilterRestaurant=== undefined||FilterRestaurant.length === 0 ? (
           ListOfRestaurant === undefined && searchRestaurant.length === 0 ? (
             <Shimmer />
           ) : (
-            <h1 className="error-msg">
+            <h1 className="font-bold text-2xl m-4 p-4 text-center">
               No matches found for "{searchRestaurant}"
             </h1>
           )
