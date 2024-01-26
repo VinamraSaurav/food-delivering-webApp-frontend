@@ -2,7 +2,7 @@ import { CONTACT_IMG } from "../utils/constants";
 
 export default function Contact() {
   return (
-    <div className="Contact-page">
+    <div className="Contact-page mt-[90px] ">
       <div className="contact-me">
         <div class="contact-container border p-2 m-2 rounded-md sm:w-[500px] mx-auto text-center">
           <img class="contact-image w-28 rounded-md mx-auto" src={CONTACT_IMG} alt="Contact Us" />

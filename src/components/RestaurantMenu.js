@@ -55,7 +55,7 @@ else if (json_menu?.data?.cards[2]?.card?.card?.info) {
   } = resInfo;
 
   return (
-    <div className="res-Menu m-2 mx-5 p-2 ">
+    <div className="res-Menu m-2 mx-5 p-2 mt-[90px]  ">
       <div className="res-details flex justify-around my-3 border-b-2 max-w-[370px] mx-auto sm:max-w-[700px] md:max-w-[1560px] ">
       <div className="res-info-details mx-4 mb-2">
           <div className="res-cft-time">

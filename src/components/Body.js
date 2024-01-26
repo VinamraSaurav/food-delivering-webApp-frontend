@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Hero from "./Hero";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -59,6 +60,7 @@ if(online===false){
 
   return (
     <div >
+      <Hero/>
       <h1 className="text-3xl font-semibold font-serif text-center my-3 py-3 ">Explore Our Restaurants...</h1>
       <div className="flex justify-center flex-wrap sm:flex-nowrap">
         <input

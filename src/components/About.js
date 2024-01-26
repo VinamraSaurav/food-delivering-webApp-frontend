@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="About m-4 p-4 rounded-lg mx-auto">
+    <div className="About m-4 p-4 rounded-lg mx-auto mt-[90px] ">
       <div className="About me">
         <div class="about-container bg-gradient-to-r from-yellow-400 rounded-lg p-4">
           <div class="project-section">

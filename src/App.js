@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div id="app">
       <Header />
-      <Hero />
+      {/* <Hero /> */}
       <Outlet />
       <Footer />
     </div>

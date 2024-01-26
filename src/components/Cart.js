@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Cart() {
   return (
-    <div className="Cart-page mb-6">
+    <div className="Cart-page mb-6 mt-[90px] ">
       <div className="message text-center mb-4">
       <img
             class="construction-image w-[300px] mx-auto m-2"

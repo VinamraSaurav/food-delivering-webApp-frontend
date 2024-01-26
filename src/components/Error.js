@@ -5,7 +5,7 @@ export default function Error() {
   const err = useRouteError();
   console.log(err);
   return (
-    <div className="Error-page flex justify-center text-center items-center h-[500px] my-auto">
+    <div className="Error-page flex justify-center text-center items-center h-[500px] my-auto mt-[90px] ">
       <div class="error-container">
         <img
           class="error-image w-[320px] mx-auto m-2 "
