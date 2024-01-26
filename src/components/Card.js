@@ -50,7 +50,7 @@ const Card = (props) => {
         <p className="mx-2 text-md text-gray-600 text-sm line-clamp-1">
           {cuisines.join(", ")}
         </p>
-        <div className="resturant-description mx-2 flex justify-between mb-3 ">
+        <div className="resturant-description mx-2 flex justify-between mb-3 w-[200px] sm:w-auto">
           <span className="text-gray-500 ">{costForTwo}</span>
           <span className="text-gray-500 hidden sm:block">{sla.slaString}</span>
           <span
