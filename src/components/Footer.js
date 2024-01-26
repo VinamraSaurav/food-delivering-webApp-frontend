@@ -1,4 +1,4 @@
-import { ADDRESS_GIF, GITHUB_LOGO_URL, INSTA_LOGO_URL, LINKED_IN_LOGO_URL, X_LOGO_URL, YT_LOGO_URL } from "../utils/constants";
+import { ADDRESS_GIF, GITHUB_LOGO_URL, INSTA_LOGO_URL, LINKED_IN_LOGO_URL, VIN_GIT, VIN_INSTA, VIN_LINK, VIN_X, X_LOGO_URL, YT_LOGO_URL } from "../utils/constants";
 
 function Footer() {
   return (
@@ -33,18 +33,18 @@ function Footer() {
       <div className="social text-white text-center m-2">
         <h3 className="font-bold font-serif text-2xl m-2 p-2">We are Social... Connect with us :D !! </h3>
         <ul className="flex justify-center mb-2">
-          <li className="github">
+        <a href={VIN_GIT} target="_blank"><li className="github">
             <img className="h-12 w-12 aspect-[3/2] m-2 p-2 rounded-md hover:bg-yellow-400 hover:cursor-pointer " src={GITHUB_LOGO_URL} />
-          </li>
-          <li className="linked-in">
+          </li></a>
+          <a href={VIN_LINK} target="_blank"><li className="linked-in">
             <img className="h-12 w-12 aspect-[3/2] m-2 p-2 rounded-md hover:bg-yellow-400 hover:cursor-pointer " src={LINKED_IN_LOGO_URL} />
-          </li>
-          <li className="insta">
+          </li></a>
+          <a href={VIN_INSTA} target="_blank"><li className="insta">
             <img className="h-12 w-12 aspect-[3/2] m-2 p-2 rounded-md hover:bg-yellow-400 hover:cursor-pointer " src={INSTA_LOGO_URL} />
-          </li>
-          <li className="x">
+          </li></a>
+          <a href={VIN_X} target="_blank"><li className="x">
             <img className="h-12 w-12 aspect-[3/2] m-2 p-2 rounded-md hover:bg-yellow-400 hover:cursor-pointer " src={X_LOGO_URL} />
-          </li>
+          </li></a>
           {/* <li className="linkedin"><img src="https://p7.hiclipart.com/preview/496/112/893/linkedin-ico-icon-linkedin-png-hd.jpg"/></li> */}
         </ul>
       </div>

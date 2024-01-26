@@ -17,6 +17,10 @@ export const SWIGGY_API_URL="https://corsproxy.io/?https%3A%2F%2Fwww.swiggy.com%
 export const CART_CONSTRUCTION="https://static.vecteezy.com/system/resources/previews/026/297/051/non_2x/building-webpage-tiny-people-design-website-interface-web-design-concept-software-development-process-programming-and-coding-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg";
 export const CONTACT_IMG="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-5795988-4849052.png?f=webp";
 export const ERR_IMG="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvljEEsXxFpX0GprkapxLA0RhYmTr--pX_RQ&usqp=CAU"
+export const VIN_GIT="https://github.com/VinamraSaurav";
+export const VIN_LINK="https://www.linkedin.com/in/vinamra-saurav/";
+export const VIN_X="https://twitter.com/vinamra_saurav2";
+export const VIN_INSTA="https://www.instagram.com/im_vin.17";
 
 //Swiggy meu api url (original):https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.3532772&lng=85.8265977&restaurantId=681612"
 // cart construction img: https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg
