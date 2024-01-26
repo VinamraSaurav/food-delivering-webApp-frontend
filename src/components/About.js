@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <div className="About">
+    <div className="About m-4 p-4 rounded-lg mx-auto">
       <div className="About me">
-        <div class="about-container">
+        <div class="about-container bg-gradient-to-r from-yellow-400 rounded-lg p-4">
           <div class="project-section">
-            <h2 class="section-heading">About Foodigy Project😀</h2>
+            <h2 class="section-heading font-serif font-bold text-2xl">About Foodigy Project😀</h2>
             <p class="section-content">
               "Foodigy" is a React based webApp that I created for practice. The
               website features a configuration-driven user interface and
@@ -12,7 +12,7 @@ export default function About() {
               demo website for a food delivering company, showcasing key
               features like a config-driven UI, routing.
               <ul>
-                😎 Key Features :
+                <strong>😎 Key Features :</strong>
                 <li>📌 Shimmer UI for Better UserExperience</li>
                 <li>📌 Search Feature</li>
                 {/* <li>📌 Checking network connection</li> */}
@@ -23,7 +23,8 @@ export default function About() {
                 </li> */}
               </ul>
               <ul>
-                💻 Technologies Used :<li>📌 React </li>
+                <strong>💻 Technologies Used :</strong>
+                <li>📌 React </li>
                 <li>📌 Redux for State Management</li>
                 {/* <li>📌 Checking network connection</li> */}
                 <li>📌 HTML, CSS, JavaScript</li>
@@ -32,7 +33,7 @@ export default function About() {
                   📌 Implemented Lazy Loading or OnDemand Loading on This Router
                 </li> */}
               </ul>
-              <div className="note">
+              <div className="note m-2">
                 <strong>Notice: Limited Menu Display</strong>
                 <p>
                   If you encounter shimmering UI instead of menus when clicking
@@ -47,7 +48,7 @@ export default function About() {
           </div>
 
           <div class="author-section">
-            <h2 class="section-heading">About the Author - Vinamra Saurav😎</h2>
+            <h2 class="section-heading font-serif font-bold text-2xl">About the Author - Vinamra Saurav😎</h2>
             <p class="section-content">
               I'm Vinamra Saurav, a tech enthusiast fascinated by new
               technologies. My expertise spans languages such as C++, C, Python,

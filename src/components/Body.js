@@ -27,7 +27,7 @@ function Body() {
   const [ListOfRestaurant, setListOfRestaurant] = useState(resmockdata);
   const [FilterRestaurant, setFilterRestaurant] = useState(ListOfRestaurant);
   const [searchRestaurant, setSearchRestaurant] = useState("");
-  const [btnFilter, setBtnFilter] = useState("Top Rated Restaurant");
+  const [btnFilter, setBtnFilter] = useState("Top Restaurants");
   const [btnSearch, setBtnSearch] = useState("Search");
 
   useEffect(() => {
@@ -63,7 +63,7 @@ if(online===false){
       <div className="flex justify-center flex-wrap sm:flex-nowrap">
         <input
           type="text"
-          className="w-96 h-9 px-3 shadow-inner shadow-slate-300 rounded-2xl border"
+          className="w-96 h-9 px-3 shadow-inner shadow-slate-300 rounded-2xl border m-2"
           placeholder="Search for your favourite Delicacies, Resturants and more..."
           id="search-bar"
           value={searchRestaurant}
@@ -85,7 +85,7 @@ if(online===false){
           }}
         ></input>
         <button
-          className="bg-yellow-400 px-4 mx-3 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold "
+          className="bg-yellow-400 px-4 mx-3 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2"
           onClick={() => {
             const serachResult = ListOfRestaurant.filter((res) =>
               res.info.name
@@ -105,17 +105,17 @@ if(online===false){
           {btnSearch}
         </button>
         <button
-          className="bg-yellow-400 px-4 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold "
+          className="bg-yellow-400 px-4 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2 "
           onClick={() => {
             const topres = ListOfRestaurant.filter(
               (res) => res.info.avgRating >= 4.5
             );
-            if (btnFilter != "Top Rated Restaurant") {
+            if (btnFilter != "Top Restaurants") {
               setFilterRestaurant(ListOfRestaurant);
-              setBtnFilter("Top Rated Restaurant");
+              setBtnFilter("Top Restaurants");
             } else {
               setFilterRestaurant(topres);
-              setBtnFilter("Show All Restaurant");
+              setBtnFilter("Show All Restaurants");
             }
           }}
         >

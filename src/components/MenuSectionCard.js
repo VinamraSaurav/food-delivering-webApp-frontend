@@ -5,7 +5,7 @@ const MenuSectionCard=(props)=>{
     // console.log(itemCards);
     return(
         <div className="menu-sec">
-            <h1>{title}</h1>
+            <h1 className="font-bold font-serif text-2xl m-3 text-center">{title}</h1>
             
             {itemCards?.map((i)=>(<ItemCard key={i?.card?.info?.id} item={i}/>))}
             {/* <hr/> */}

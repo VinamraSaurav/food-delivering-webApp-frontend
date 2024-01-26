@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className="fixed top-0 left-0 right-0">
       <nav className="bg-black text-white flex justify-between shadow-md shadow-slate-500">
-        <img className="h-14 m-2 items-center rounded-full ring-1 ring-white" src={LOGO_URL} alt="company-logo" />
+        <img className="h-14 w-14 sm:ml-5 aspect-[3/2] m-2 items-center rounded-full ring-1 ring-white" src={LOGO_URL} alt="company-logo" />
         <div className="nav-items">
 
             <ul className="flex flex-wrap items-center p-2 m-2 mx-auto text-white sm:flex-nowrap ">
