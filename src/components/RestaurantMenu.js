@@ -18,11 +18,26 @@ const RestaurantMenu = () => {
     const menu = await fetch(SWIGGY_MENU_API_URL + resId);
     const json_menu = await menu.json();
     // console.log(json_menu);
-    setResInfo(json_menu?.data?.cards[0]?.card?.card?.info);
+    // setResInfo(json_menu?.data?.cards[0]?.card?.card?.info);
+    // Check if 'info' exists in cards[0]
+if (json_menu?.data?.cards[0]?.card?.card?.info) {
+  setResInfo(json_menu.data.cards[0].card.card.info);
+}
+// If 'info' doesn't exist in cards[0], check cards[2]
+else if (json_menu?.data?.cards[2]?.card?.card?.info) {
+  setResInfo(json_menu.data.cards[2].card.card.info);
+}
     // console.log(json_menu?.data?.cards[0]?.card?.card?.info);
-    setResMenuDetails(
-      json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
-    );
+    // setResMenuDetails(
+    //   json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+    // );
+    if (json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards) {
+      setResMenuDetails(json_menu.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
+  }
+  // If 'cards' doesn't exist in cards[2], check cards[5]
+  else if (json_menu?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards) {
+      setResMenuDetails(json_menu.data.cards[5].groupedCard.cardGroupMap.REGULAR.cards);
+  }
     // console.log(
     //   json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     // );

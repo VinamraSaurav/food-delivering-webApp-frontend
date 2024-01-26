@@ -44,10 +44,10 @@ const Card = (props) => {
             ⭐{newRating}
           </span>
         </div>
-        <span className="res-locality mx-2 line-clamp-1 text-gray-700">
+        <span className="res-locality mx-2 line-clamp-1 text-gray-600 text-sm">
           {locality}, {areaName}
         </span>
-        <p className="mx-2 text-md text-gray-700 line-clamp-1">
+        <p className="mx-2 text-md text-gray-600 text-sm line-clamp-1">
           {cuisines.join(", ")}
         </p>
         <div className="resturant-description mx-2 flex justify-between mb-3 ">
