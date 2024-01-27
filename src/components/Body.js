@@ -62,11 +62,11 @@ if(online===false){
     <div >
       <Hero/>
       <h1 className="text-3xl font-semibold font-serif text-center my-3 py-3 ">Explore Our Restaurants...</h1>
-      <div className="flex justify-center flex-wrap sm:flex-nowrap">
+      <div className="flex justify-center flex-wrap sm:flex-nowrap ">
         <input
           type="text"
-          className="w-96 h-9 px-3 shadow-inner shadow-slate-300 rounded-2xl border m-2"
-          placeholder="Search for your favourite Delicacies, Resturants and more..."
+          className="w-[370px] h-9 px-3 shadow-inner shadow-slate-300 rounded-2xl border m-2 "
+          placeholder="Search for your favourite Restaurants and more..."
           id="search-bar"
           value={searchRestaurant}
           onChange={(e) => setSearchRestaurant(e.target.value)}
@@ -87,7 +87,7 @@ if(online===false){
           }}
         ></input>
         <button
-          className="bg-yellow-400 px-4 mx-3 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2"
+          className="bg-yellow-400 px-4 mx-3 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2 py-1"
           onClick={() => {
             const serachResult = ListOfRestaurant.filter((res) =>
               res.info.name
@@ -107,7 +107,7 @@ if(online===false){
           {btnSearch}
         </button>
         <button
-          className="bg-yellow-400 px-4 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2 "
+          className="bg-yellow-400 px-4 rounded-3xl text-white hover:bg-black hover:text-yellow-400 font-semibold m-2 py-1"
           onClick={() => {
             const topres = ListOfRestaurant.filter(
               (res) => res.info.avgRating >= 4.5
@@ -134,12 +134,12 @@ if(online===false){
             </h1>
           )
         ) : (
-          FilterRestaurant?.map((resturant) => (
+          FilterRestaurant?.map((restaurant) => (
             <Link onClick={()=>{window.scrollTo(0, 0);}}
-              key={resturant?.info?.id}
-              to={"/restaurant/" + resturant?.info?.id}
+              key={restaurant?.info?.id}
+              to={"/restaurant/" + restaurant?.info?.id}
             >
-              <Card resData={resturant} />
+              <abbr title={restaurant?.info?.name} className="no-underline"><Card resData={restaurant} /></abbr>
             </Link>
           ))
         )}

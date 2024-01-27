@@ -1,5 +1,3 @@
-import logo from "../../images/foodigy-logo-transparent.png"
-export const LOGO_URL =logo;
 
 // export const CART_IMG_URL =
 //   "https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png";

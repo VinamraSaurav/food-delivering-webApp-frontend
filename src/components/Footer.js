@@ -8,7 +8,7 @@ function Footer() {
       </h1>
       <div className="foot-menu flex justify-evenly items-center sm:flex-nowrap flex-wrap m-3">
         <img
-          className="address-logo h-64 hidden sm:block"
+          className="address-logo h-64 hidden md:block"
           src={ADDRESS_GIF}
           alt="Address"
         />
@@ -50,7 +50,7 @@ function Footer() {
       </div>
       <div className="copyright bg-gray-950 text-white text-center text-sm">
         {" "}
-        ©️ 2024 - Created by VINAMRA (Vin) | All Rights Reserved{" "}
+        ©️ 2024 - Developed by VINAMRA (Vin){" "}
       </div>
     </div>
   );
