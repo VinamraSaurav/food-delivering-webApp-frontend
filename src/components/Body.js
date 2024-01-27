@@ -135,7 +135,7 @@ if(online===false){
           )
         ) : (
           FilterRestaurant?.map((resturant) => (
-            <Link
+            <Link onClick={()=>{window.scrollTo(0, 0);}}
               key={resturant?.info?.id}
               to={"/restaurant/" + resturant?.info?.id}
             >

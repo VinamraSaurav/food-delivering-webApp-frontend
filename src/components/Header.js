@@ -24,6 +24,7 @@ function Header() {
 
   const handleClick=()=>{
       setOpenNav(false);
+      window.scrollTo(0, 0);
     }
    
   
