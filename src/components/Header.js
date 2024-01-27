@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
+import logo from "../../images/foodigy-logo-transparent.png"
 
 function Header() {
   const [logValue, setLogValue] = useState("Login");
@@ -37,7 +38,7 @@ function Header() {
       <div className="flex justify-between">
         <img
           className="h-14 w-14 sm:ml-5 aspect-[3/2] m-2 items-center rounded-full ring-1 ring-white"
-          src={LOGO_URL}
+          src={logo}
           alt="company-logo"
         />
         <div className="flex my-2 py-2 mx-1 px-1 md:hidden">
