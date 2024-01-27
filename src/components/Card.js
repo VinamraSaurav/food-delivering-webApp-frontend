@@ -13,7 +13,7 @@ const Card = (props) => {
     costForTwo,
     sla,
   } = resData?.info;
-  const newRating = avgRating || "Not Rated";
+  const newRating = avgRating.toFixed(1) || "Not Rated";
 
   // State to manage the background color
   const [ratingColor, setRatingColor] = useState("");
