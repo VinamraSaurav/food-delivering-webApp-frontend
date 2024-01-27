@@ -12,6 +12,7 @@ function Header() {
   const online = useOnlineStatus();
 
   const [openNav, setOpenNav] = useState(false);
+  
 
   const showNav = () => {
     if (openNav == false) {
@@ -20,6 +21,13 @@ function Header() {
       setOpenNav(false);
     }
   };
+
+  const handleClick=()=>{
+      setOpenNav(false);
+    }
+   
+  
+
 
   // (online===true)?setOnlineValue("✅"):setOnlineValue("🔴");
 
@@ -85,7 +93,7 @@ function Header() {
           </div>
 
           <div
-            className="btn p-1 m-1 mx-4 text-black bg-yellow-400 rounded-xl px-3 text-xl transition-all duration-500"
+            className="btn p-1 m-1 mx-4 text-black bg-yellow-400 rounded-xl px-3 text-xl transition-all duration-500 hover:cursor-pointer"
             onClick={showNav}
           >
             {openNav === true ? <FaTimes /> : <FaBars />}
@@ -94,18 +102,19 @@ function Header() {
       </div>
       <nav className="">
         <div className="nav-items">
-          <ul className={`items-center p-2 m-2 mx-auto text-white md:flex-nowrap md:flex text-center absolute md:static bg-black opacity-90 md:z-auto z-[-1] left-0 w-full transition-all duration-300 ease-in ${openNav===true?'top-16':'top-[-490px]'}`}
+          <ul className={`items-center p-2 md:m-2 leading-[50px] md:leading-normal text-gray-300 hover:text-white md:text-white
+           md:flex-nowrap md:flex md:flex-row flex flex-col h-[100vh] md:h-auto justify-center text-left absolute md:static bg-black opacity-90 md:z-auto z-[-1] right-0 w-full transition-all duration-300 ease-in ${openNav===true?'right-0':'right-[-780px]'}`}
           >
-            <li className="p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3">
+            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 md:text-base text-2xl py-5  font-bold ">
               <Link to="/">Home</Link>
             </li>
-            <li className="p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3">
+            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 md:text-base text-2xl py-5 font-bold">
               <Link to="/about">About</Link>
             </li>
-            <li className="p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3">
+            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 md:text-base text-2xl py-5 font-bold">
               <Link to="/contact">Contact Us</Link>
             </li>
-            <li className="p-1 m-1 ms-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 hidden md:block">
+            <li onClick={handleClick} className="md:p-1 m-1 ms-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 hidden md:block md:text-base text-2xl py-5 font-bold">
               <Link to="/cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
