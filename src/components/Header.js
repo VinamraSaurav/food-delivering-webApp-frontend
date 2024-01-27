@@ -103,18 +103,18 @@ function Header() {
       <nav className="">
         <div className="nav-items">
           <ul className={`items-center p-2 md:m-2 leading-[50px] md:leading-normal text-gray-300 hover:text-white md:text-white
-           md:flex-nowrap md:flex md:flex-row flex flex-col h-[100vh] md:h-auto justify-center text-left absolute md:static bg-black opacity-90 md:z-auto z-[-1] right-0 w-full transition-all duration-300 ease-in ${openNav===true?'right-0':'right-[-780px]'}`}
+           md:flex-nowrap md:flex md:flex-row flex flex-col h-[100vh] md:h-auto justify-center text-left absolute md:static bg-black opacity-90 md:z-auto z-[-1] right-0 w-full  transition-all duration-300 ease-in ${openNav===true?'right-0':'right-[-780px]'}`}
           >
-            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 md:text-base text-2xl py-5  font-bold ">
+            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl md:px-3 md:text-base text-2xl p-3  font-bold  -translate-y-1/2 md:translate-y-0">
               <Link to="/">Home</Link>
             </li>
-            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 md:text-base text-2xl py-5 font-bold">
+            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl md:px-3 md:text-base text-2xl p-3 font-bold -translate-y-1/2 md:translate-y-0">
               <Link to="/about">About</Link>
             </li>
-            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 md:text-base text-2xl py-5 font-bold">
+            <li onClick={handleClick} className="md:p-1 m-1 mx-4 hover:bg-yellow-400 hover:text-black rounded-xl md:px-3 md:text-base text-2xl p-3 font-bold -translate-y-1/2 md:translate-y-0">
               <Link to="/contact">Contact Us</Link>
             </li>
-            <li onClick={handleClick} className="md:p-1 m-1 ms-4 hover:bg-yellow-400 hover:text-black rounded-xl px-3 hidden md:block md:text-base text-2xl py-5 font-bold">
+            <li onClick={handleClick} className="md:p-1 m-1 ms-4 hover:bg-yellow-400 hover:text-black rounded-xl md:px-3 hidden md:block md:text-base text-2xl p-3 font-bold -translate-y-1/2 md:translate-y-0">
               <Link to="/cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
