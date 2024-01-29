@@ -34,7 +34,7 @@ function Header() {
   // (online===true)?setOnlineValue("✅"):setOnlineValue("🔴");
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-black text-white md:flex md:justify-between shadow-md shadow-slate-500">
+    <div className="fixed top-0 left-0 right-0 bg-black text-white md:flex md:justify-between shadow-md shadow-slate-500 z-[5]">
       <div className="flex justify-between">
         <img
           className="h-14 w-14 sm:ml-5 aspect-[3/2] m-2 items-center rounded-full ring-1 ring-white"

@@ -19,6 +19,9 @@ export const VIN_GIT="https://github.com/VinamraSaurav";
 export const VIN_LINK="https://www.linkedin.com/in/vinamra-saurav/";
 export const VIN_X="https://twitter.com/vinamra_saurav2";
 export const VIN_INSTA="https://www.instagram.com/im_vin.17";
+// export const CORSPROXY="";
+export const SWIGGY_API_RES_URL="https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.3532772&lng=85.8265977&page_type=DESKTOP_WEB_LISTING%22";
+
 
 //Swiggy meu api url (original):https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.3532772&lng=85.8265977&restaurantId=681612"
 // cart construction img: https://academics.otc.edu/media/uploads/sites/49/2022/06/page-under-construction-icon.jpg
