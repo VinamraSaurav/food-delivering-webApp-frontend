@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { SWIGGY_API_URL } from "../utils/constants";
 import resmockdata from "../utils/ResMockData"
 import useOnlineStatus from "../utils/useOnlineStatus";
+import withLabel from "./withLabel";
 /**
  * Key are used when ever we use map function as
  * if new element is added in between React does not have to
@@ -52,7 +53,10 @@ if(ListOfRestaurant===undefined){
   setListOfRestaurant(resmockdata);
   setFilterRestaurant(resmockdata);
 }
+
+const VegResCard=withLabel(Card);
 const online=useOnlineStatus();
+
 if(online===false){
   return(<h1><center>Look's like you are not connected to the internet, Kindly check your internet connection.</center></h1>)
 }
@@ -139,7 +143,9 @@ if(online===false){
               key={restaurant?.info?.id}
               to={"/restaurant/" + restaurant?.info?.id}
             >
-              <abbr title={restaurant?.info?.name} className="no-underline"><Card resData={restaurant} /></abbr>
+              <abbr title={restaurant?.info?.name} className="no-underline">
+                {restaurant?.info?.veg?<VegResCard resData={restaurant} />:<Card resData={restaurant}/>}
+              </abbr>
             </Link>
           ))
         )}

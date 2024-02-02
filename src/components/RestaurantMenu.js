@@ -9,6 +9,7 @@ const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState({});
   const [resMenuDetails, setResMenuDetails] = useState([]);
   const { resId } = useParams();
+  const [showIndex, setShowIndex]=useState(0);
 
   useEffect(() => {
     fetchMenu();
@@ -32,16 +33,18 @@ else if (json_menu?.data?.cards[2]?.card?.card?.info) {
     //   json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     // );
     if (json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards) {
-      setResMenuDetails(json_menu.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
+      setResMenuDetails(json_menu.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter((c)=>(c?.card?.card?.["@type"]==='type.googleapis.com/swiggy.presentation.food.v2.ItemCategory')));
   }
   // If 'cards' doesn't exist in cards[2], check cards[5]
   else if (json_menu?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards) {
-      setResMenuDetails(json_menu.data.cards[5].groupedCard.cardGroupMap.REGULAR.cards);
+      setResMenuDetails(json_menu.data.cards[5].groupedCard.cardGroupMap.REGULAR.cards.filter((c)=>(c?.card?.card?.["@type"]==='type.googleapis.com/swiggy.presentation.food.v2.ItemCategory')));
   }
     // console.log(
     //   json_menu?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     // );
+    console.log(resMenuDetails);
   };
+ 
 
   const {
     name,
@@ -78,8 +81,8 @@ else if (json_menu?.data?.cards[2]?.card?.card?.info) {
       
 
       <div className="section-card">
-        {(resMenuDetails===undefined ||resMenuDetails.length===0)?<Shimmer/>:(resMenuDetails.slice(1).map((e, i) => (
-          <MenuSectionCard key={i} resSec={e} />
+        {(resMenuDetails===undefined ||resMenuDetails.length===0)?<Shimmer/>:(resMenuDetails.map((e, i) => (
+          <MenuSectionCard key={i} resSec={e} showItem={i===showIndex?true:false} setShowIndex={showIndex===i?()=>setShowIndex(null):()=>setShowIndex(i)}/>
         )))}
         <hr />
       </div>
