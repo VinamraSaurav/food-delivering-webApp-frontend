@@ -33,7 +33,7 @@ export default function Contact() {
   //   return errors;
   // };
 
-  validationSchema=yup.object({
+  const validationSchema=yup.object({
     name:yup.string().max(30,"Must be 30 characters or less").required("Required"),
     email:yup.string().email("Invalid Email Address").required("Required"),
     message:yup.string().max(200,"Must be 200 characters or less").required("Required"),
